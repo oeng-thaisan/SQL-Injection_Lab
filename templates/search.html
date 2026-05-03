@@ -1,0 +1,12 @@
+<h2>🔎 Search Users</h2>
+
+<form method="POST">
+    <input name="keyword" placeholder="Search username">
+    <button>Search</button>
+</form>
+
+<ul>
+{% for r in results %}
+    <li>{{ r[0] }}</li>
+{% endfor %}
+</ul>

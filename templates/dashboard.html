@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar span {
+    font-size: 14px;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Product Card */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Emoji */
+.emoji {
+    font-size: 50px;
+}
+
+/* Button */
+.btn {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+    🍹 Dashboard
+    <span>Welcome, customer</span>
+</div>
+
+<div class="container">
+    <h2>Fresh Juice Menu</h2>
+
+
+<div class="grid">
+
+    <div class="card">
+        <div class="emoji">🍊</div>
+        <h3>Orange Juice</h3>
+        <p>Fresh and healthy</p>
+        <a href="/search" class="btn">Order</a>
+    </div>
+
+    <div class="card">
+        <div class="emoji">🍓</div>
+        <h3>Strawberry Juice</h3>
+        <p>Sweet and delicious</p>
+        <a href="/blind" class="btn">Order</a>
+    </div>
+
+    <div class="card">
+        <div class="emoji">🥭</div>
+        <h3>Mango Juice</h3>
+        <p>Coming soon...</p>
+        <a href="#" class="btn">Unavailable</a>
+    </div>
+
+    <div class="card">
+        <div class="emoji">🍍</div>
+        <h3>Pineapple Juice</h3>
+        <p>Secret recipe...</p>
+        <a href="#" class="btn">Locked 🔒</a>
+    </div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
